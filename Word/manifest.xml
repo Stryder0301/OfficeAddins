@@ -6,17 +6,17 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Highstreet Insert"/>
   <Description DefaultValue="Quick access to Highstreet branding materials."/>
-  <IconUrl DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-  <HighResolutionIconUrl DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-  <SupportUrl DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/help"/> <!-- CHANGE TO DESIRED SUPPORT URL -->
+  <IconUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <HighResolutionIconUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <SupportUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/help"/> <!-- CHANGE TO DESIRED SUPPORT URL -->
   <AppDomains>
-    <AppDomain>https://highstreetit.sharepoint.com/</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
+    <AppDomain>https://highstreetit.sharepoint.com</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
   </AppDomains>
   <Hosts>
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+    <SourceLocation DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -62,14 +62,14 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.32x32" DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.80x80" DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.16x16" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.32x32" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.80x80" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://highstreetit.sharepoint.com/IT/Office%20AddIns/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Commands.Url" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Taskpane.Url" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
