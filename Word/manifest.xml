@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>9338dcd1-b181-4256-a732-3426366eb50e</Id>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.0.0</Version>
   <ProviderName>Highstreet</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Highstreet Insert"/>
   <Description DefaultValue="Quick access to Highstreet branding materials."/>
-  <IconUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-  <HighResolutionIconUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-  <SupportUrl DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/help"/> <!-- CHANGE TO DESIRED SUPPORT URL -->
+  <IconUrl DefaultValue="https://www.contoso.com/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <SupportUrl DefaultValue="https://www.contoso.com/help"/> <!-- CHANGE TO DESIRED SUPPORT URL -->
   <AppDomains>
-    <AppDomain>https://highstreetit.sharepoint.com</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
+    <AppDomain>https://www.contoso.com</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
   </AppDomains>
   <Hosts>
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+    <SourceLocation DefaultValue="https://www.contoso.com/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -62,14 +62,14 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.32x32" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.80x80" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://github.com/Stryder0301/OfficeAddins/blob/main/Word/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
