@@ -6,17 +6,17 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Highstreet Insert"/> 
   <Description DefaultValue="Quick access to Highstreet branding materials."/> 
-  <IconUrl DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/HighstreetLogo-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-  <SupportUrl DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/help"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <IconUrl DefaultValue="https://www.contoso.com/assets/HighstreetLogo-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/LogomarkBlue.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+  <SupportUrl DefaultValue="https://www.contoso.com/help"/> <!-- CHANGE TO DISTRIBUTION URL -->
   <AppDomains>
-    <AppDomain>https://stryder0301.github.io/OfficeAddins/PowerPoint/</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
+    <AppDomain>https://www.contoso.com</AppDomain> <!-- CHANGE TO DISTRIBUTION URL -->
   </AppDomains>
   <Hosts>
     <Host Name="Presentation"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+    <SourceLocation DefaultValue="https://www.contoso.com/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -58,342 +58,26 @@
               </Group>
             </OfficeTab>
           </ExtensionPoint>
-
-          <!-- seems complicated -->
-          <!-- <ExtensionPoint xsi:type="ContextMenu"> 
-            <OfficeMenu id="ContextMenuText">
-              <Control xsi:type="Button" id="ContextMenuButton">
-                <Label resid="ContextMenuButton.Label"/>
-                <Supertip>
-                  <Title resid="ContextMenuButton.Label" />
-                  <Description resid="ContextMenuButton.Tooltip" />
-                </Supertip>
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16x16" />
-                  <bt:Image size="32" resid="Icon.32x32" />
-                  <bt:Image size="80" resid="Icon.80x80" />
-                </Icon>
-                <Action xsi:type="ExecuteFunction">
-                  <FunctionName>NeXtechLab</FunctionName>
-                </Action>
-              </Control>
-            </OfficeMenu>
-          </ExtensionPoint> -->
-          <!-- seems complicated but at least its working -->
-
-          <!-- new test -->
-          <ExtensionPoint xsi:type="ContextMenu">
-            <OfficeMenu id="ContextMenuText">
-              <Control xsi:type="Menu" id="ContextMenuButton">
-                <Label resid="ContextMenuButton.Label" />
-                <Supertip>
-                  <Title resid="ContextMenuButton.Label" />
-                  <Description resid="ContextMenuButton.Tooltip" />
-                </Supertip>
-                <Icon>
-                  <bt:Image size="16" resid="Icon.32x32" />
-                  <bt:Image size="32" resid="Icon.32x32" />
-                  <bt:Image size="80" resid="Icon.32x32" />
-                </Icon>
-                <Items> 
-                  <Item id="NeXtechLab"> <!-- ############################## -->
-                    <Label resid="NeXtechLab.Label"/>
-                    <Supertip>
-                      <Title resid="NeXtechLab.Label" />
-                      <Description resid="NeXtechLab.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>NeXtechLab</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="NeXtech"> <!-- ############################## -->
-                    <Label resid="NeXtech.Label"/>
-                    <Supertip>
-                      <Title resid="NeXtech.Label" />
-                      <Description resid="NeXtech.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>NeXtech</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="DeliveryX"> <!-- ############################## -->
-                    <Label resid="DeliveryX.Label"/>
-                    <Supertip>
-                      <Title resid="DeliveryX.Label" />
-                      <Description resid="DeliveryX.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>DeliveryX</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="UpNEXT"> <!-- ############################## -->
-                    <Label resid="UpNEXT.Label"/>
-                    <Supertip>
-                      <Title resid="UpNEXT.Label" />
-                      <Description resid="UpNEXT.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>UpNEXT</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="DataRefleXtion"> <!-- ############################## -->
-                    <Label resid="DataRefleXtion.Label"/>
-                    <Supertip>
-                      <Title resid="DataRefleXtion.Label" />
-                      <Description resid="DataRefleXtion.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>DataRefleXtion</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="BridgeXing"> <!-- ############################## -->
-                    <Label resid="BridgeXing.Label"/>
-                    <Supertip>
-                      <Title resid="BridgeXing.Label" />
-                      <Description resid="BridgeXing.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>BridgeXing</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="FastraX"> <!-- ############################## -->
-                    <Label resid="FastraX.Label"/>
-                    <Supertip>
-                      <Title resid="FastraX.Label" />
-                      <Description resid="FastraX.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>FastraX</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="RouteX"> <!-- ############################## -->
-                    <Label resid="RouteX.Label"/>
-                    <Supertip>
-                      <Title resid="RouteX.Label" />
-                      <Description resid="RouteX.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>RouteX</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="ProcessDynamiX"> <!-- ############################## -->
-                    <Label resid="ProcessDynamiX.Label"/>
-                    <Supertip>
-                      <Title resid="ProcessDynamiX.Label" />
-                      <Description resid="ProcessDynamiX.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>ProcessDynamiX</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="Bridges"> <!-- ############################## -->
-                    <Label resid="Bridges.Label"/>
-                    <Supertip>
-                      <Title resid="Bridges.Label" />
-                      <Description resid="Bridges.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>Bridges</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="PaySynX"> <!-- ############################## -->
-                    <Label resid="PaySynX.Label"/>
-                    <Supertip>
-                      <Title resid="PaySynX.Label" />
-                      <Description resid="PaySynX.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.32x32" />
-                      <bt:Image size="32" resid="Icon.32x32" />
-                      <bt:Image size="80" resid="Icon.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>PaySynX</FunctionName>
-                    </Action>
-                  </Item>
-
-                  <!-- LOGO ITEMS -->
-                  <Item id="HighstreetLogoPrimary"> <!-- ############################## -->
-                    <Label resid="HighstreetLogoPrimary.Label"/>
-                    <Supertip>
-                      <Title resid="HighstreetLogoPrimary.Label" />
-                      <Description resid="HighstreetLogoPrimary.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>HighstreetLogoPrimary</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="HighstreetLogoWhite"> <!-- ############################## -->
-                    <Label resid="HighstreetLogoWhite.Label"/>
-                    <Supertip>
-                      <Title resid="HighstreetLogoWhite.Label" />
-                      <Description resid="HighstreetLogoWhite.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>HighstreetLogoWhite</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="HighstreetLogoBlack"> <!-- ############################## -->
-                    <Label resid="HighstreetLogoBlack.Label"/>
-                    <Supertip>
-                      <Title resid="HighstreetLogoBlack.Label" />
-                      <Description resid="HighstreetLogoBlack.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>HighstreetLogoBlack</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="BridgesLogo"> <!-- ############################## -->
-                    <Label resid="BridgesLogo.Label"/>
-                    <Supertip>
-                      <Title resid="BridgesLogo.Label" />
-                      <Description resid="BridgesLogo.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>BridgesLogo</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="LogomarkBlue"> <!-- ############################## -->
-                    <Label resid="LogomarkBlue.Label"/>
-                    <Supertip>
-                      <Title resid="LogomarkBlue.Label" />
-                      <Description resid="LogomarkBlue.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>LogomarkBlue</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="LogomarkWhite"> <!-- ############################## -->
-                    <Label resid="LogomarkWhite.Label"/>
-                    <Supertip>
-                      <Title resid="LogomarkWhite.Label" />
-                      <Description resid="LogomarkWhite.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>LogomarkWhite</FunctionName>
-                    </Action>
-                  </Item>
-                  <Item id="LogomarkBlack"> <!-- ############################## -->
-                    <Label resid="LogomarkBlack.Label"/>
-                    <Supertip>
-                      <Title resid="LogomarkBlack.Label" />
-                      <Description resid="LogomarkBlack.Tooltip" />
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="IconBlack.32x32" />
-                      <bt:Image size="32" resid="IconBlack.32x32" />
-                      <bt:Image size="80" resid="IconBlack.32x32" />
-                    </Icon>
-                    <Action xsi:type="ExecuteFunction">
-                      <FunctionName>LogomarkBlack</FunctionName>
-                    </Action>
-                  </Item>
-                </Items>
-              </Control>
-            </OfficeMenu>
-          </ExtensionPoint>
-          <!-- new test -->
-
         </DesktopFormFactor>
       </Host>
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/HighstreetLogo-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.32x32" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/HighstreetLogo-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="IconBlack.32x32" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/HighstreetLogoBlack-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Image id="Icon.80x80" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="IconBlack.32x32" DefaultValue="https://www.contoso.com/assets/HighstreetLogoBlack-32.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/HighstreetLogo-80.png"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://stryder0301.github.io/OfficeAddins/PowerPoint/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
+        <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/> <!-- CHANGE TO DISTRIBUTION URL -->
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Insert Highstreet"/>
-        <bt:String id="ContextMenuButton.Label" DefaultValue="Insert Highstreet"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Highstreet Insert"/>
+        <bt:String id="ContextMenuButton.Label" DefaultValue="Highstreet Insert"/>
 
         <bt:String id="NeXtechLab.Label" DefaultValue="NeXtech Lab™"/>
         <bt:String id="NeXtech.Label" DefaultValue="NeXtech™"/>
